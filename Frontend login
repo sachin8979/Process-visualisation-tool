@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class=" min-h-screen bg-slate-900">
+    <div class= "flex justify-center mt-20 ">
+    <div class="w-full max-w-lg p-6 rounded-lg shadow-md h-90 bg-white">
+        <h2 class="text-center text-3xl font-bold underline mb-6">Admin Login</h2>
+        <form action="login1.php" method="post" class="space-y-6">
+            <!-- Name -->
+            <div>
+                <label for="name" class="block text-md font-medium text-gray-700">Name</label>
+                <input 
+                    type="text" 
+                    name="username" 
+                    id="name" 
+                    required 
+                    class="w-full h-10 rounded-md px-4 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
+                    placeholder="Enter your Name" 
+                    aria-label="admin Name">
+            </div>
+
+            <!--password -->
+            <div>
+                <label for="pass" class="block text-md font-medium text-gray-700">Password</label>
+                <input 
+                    type="password" 
+                    name="userpassword" 
+                    id="pass" 
+                    required 
+                    class="w-full h-10 rounded-md px-4 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
+                    placeholder="Enter your password" 
+                    aria-label="Product Price">
+            </div>
+
+            
+
+            <!-- Submit Button -->
+            <button 
+                type="submit" 
+                name="submit" 
+                class="w-full h-12 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                Login
+            </button>
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>
